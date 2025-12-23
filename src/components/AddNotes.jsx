@@ -7,7 +7,19 @@ const AddNotes = ({ addNote }) => {
 
   const formsubmitted = (e) => {
     e.preventDefault();
-
+    if (title == "" || body == "") {
+      swal({
+        title: "",
+        text: "Cannot add empty note!",
+        icon: "warning",
+        button: {
+          text: "[GOT IT]",
+          className: "custom-swal-button",
+        },
+        className: "custom-swal",
+      });
+      return;
+    }
     addNote({ title, body });
     setTitle("");
     setBody("");

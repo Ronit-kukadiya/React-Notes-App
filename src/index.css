@@ -2,3 +2,20 @@
 ::-webkit-scrollbar {
   display: none;
 }
+.custom-swal {
+  background-color: #0b2119;
+}
+
+.custom-swal .swal-text {
+  color: rgb(71, 196, 96);
+  font: bold 18px Arial;
+}
+.custom-swal-button {
+  background-color: #0ba149;
+  color: #ffffff;
+}
+
+.custom-swal-button:hover {
+  background-color: #00702f !important;
+  color: #ffffff;
+}
